@@ -7,10 +7,10 @@ Official CLI for the GetX™ framework.
 
 ```dart
 // To install:
-pub global activate v_cli 
+pub global activate vui_cli
 // (to use this add the following to system PATH: [FlutterSDKInstallDir]\bin\cache\dart-sdk\bin
 
-flutter pub global activate v_cli
+flutter pub global activate vui_cli
 
 // To create a flutter project in the current directory:
 // Note: By default it will take the folder's name as project name
@@ -345,7 +345,7 @@ One day a user asked me, if it was possible to change what the final name of the
 Example:
 
 ```yaml
-v_cli:
+vui_cli:
   separator: "."
 ```
 
@@ -355,7 +355,7 @@ To help you organize your imports a new command was created: `vui sort`, in addi
 When using vui sort all files are renamed, with the [separator](#separator-file-type).
 To not rename use the `--skipRename` flag.
 
-You are one of those who prefer to use relative imports instead of project imports, use the `--relative` option. v_cli will convert.
+You are one of those who prefer to use relative imports instead of project imports, use the `--relative` option. vui_cli will convert.
 
 ### Internationalization of the cli
 

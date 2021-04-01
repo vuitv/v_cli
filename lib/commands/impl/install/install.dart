@@ -14,7 +14,7 @@ class InstallCommand extends Command {
   List<String> get alias => ['-i'];
   @override
   Future<void> execute() async {
-    var args = List<String>.from(GetCli.arguments);
+    var args = List<String>.from(VuiCli.arguments);
     args.removeAt(0);
     var isDev = containsArg('--dev') || containsArg('-dev');
     var runPubGet = true;
@@ -50,7 +50,7 @@ class InstallCommand extends Command {
 
   @override
   bool validate() {
-    var args = List<String>.from(GetCli.arguments);
+    var args = List<String>.from(VuiCli.arguments);
     args.removeAt(0);
     if (args.isEmpty) {
       final codeSample1 = LogService.code('get install get:3.4.6');

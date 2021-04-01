@@ -34,6 +34,7 @@ $commandsHelp
     }
     return result;
   }
+
   /* String _getCommandsHelp(Map commands, int index) {
     var result = '';
     commands.forEach((key, value) {

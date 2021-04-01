@@ -15,13 +15,13 @@ abstract class Command with ArgsMixin {
 
   /// validate command line arguments
   bool validate() {
-    var flagsNotAceppts = flags;
-    flagsNotAceppts.removeWhere((element) => acceptedFlags.contains(element));
-    if (flagsNotAceppts.isNotEmpty) {
+    var flagsNotAccepts = flags;
+    flagsNotAccepts.removeWhere((element) => acceptedFlags.contains(element));
+    if (flagsNotAccepts.isNotEmpty) {
       LogService.info(LocaleKeys.info_unnecessary_flag.trArgsPlural(
         LocaleKeys.info_unnecessary_flag_prural,
-        flagsNotAceppts.length,
-        [flagsNotAceppts.toString()],
+        flagsNotAccepts.length,
+        [flagsNotAccepts.toString()],
       ));
     }
     return true;

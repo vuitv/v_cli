@@ -46,11 +46,11 @@ class ShellUtils {
 
   static Future<void> update(
       [bool isGit = false, bool forceUpdate = false]) async {
-    isGit = GetCli.arguments.contains('--git');
-    forceUpdate = GetCli.arguments.contains('-f');
+    isGit = VuiCli.arguments.contains('--git');
+    forceUpdate = VuiCli.arguments.contains('-f');
     if (!isGit && !forceUpdate) {
       var versionInPubDev =
-          await PubDevApi.getLatestVersionFromPackage('get_cli');
+          await PubDevApi.getLatestVersionFromPackage('vui_cli');
 
       var versionInstalled = await PubspecLock.getVersionCli(disableLog: true);
 
@@ -60,7 +60,7 @@ class ShellUtils {
       }
     }
 
-    LogService.info('Upgrading get_cli …');
+    LogService.info('Upgrading vui_cli …');
     var res;
     if (Platform.script.path.contains('flutter')) {
       if (isGit) {
@@ -71,7 +71,7 @@ class ShellUtils {
               'global',
               'activate',
               '-sgit',
-              'https://github.com/jonataslaw/get_cli/'
+              'https://github.com/vuitv/v_cli/'
             ],
             verbose: true);
       } else {
@@ -81,7 +81,7 @@ class ShellUtils {
               'pub',
               'global',
               'activate',
-              'get_cli',
+              'vui_cli',
             ],
             verbose: true);
       }
@@ -93,7 +93,7 @@ class ShellUtils {
               'global',
               'activate',
               '-sgit',
-              'https://github.com/jonataslaw/get_cli/'
+              'https://github.com/vuitv/v_cli/'
             ],
             verbose: true);
       } else {
@@ -102,7 +102,7 @@ class ShellUtils {
             [
               'global',
               'activate',
-              'get_cli',
+              'vui_cli',
             ],
             verbose: true);
       }

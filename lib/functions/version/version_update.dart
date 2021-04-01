@@ -14,7 +14,7 @@ import 'print_get_cli.dart';
 void checkForUpdate() async {
   if (!CliConfig.updateIsCheckingToday()) {
     if (!isDevVersion()) {
-      await PubDevApi.getLatestVersionFromPackage('get_cli')
+      await PubDevApi.getLatestVersionFromPackage('vui_cli')
           .then((versionInPubDev) async {
         await PubspecLock.getVersionCli(disableLog: true)
             .then((versionInstalled) async {
@@ -29,7 +29,7 @@ void checkForUpdate() async {
                 LocaleKeys.info_update_available.trArgs([versionInstalled])));
             //await versionCommand();
             printGetCli();
-            final codeSample = LogService.code('get update');
+            final codeSample = LogService.code('vui update');
             LogService.info(
                 '${LocaleKeys.info_update_available2.trArgs([
                   versionInPubDev

@@ -23,8 +23,8 @@ class CreateScreenCommand extends Command {
   @override
   Future<void> execute() async {
     var isProject = false;
-    if (GetCli.arguments[0] == 'create') {
-      isProject = GetCli.arguments[1].split(':').first == 'project';
+    if (VuiCli.arguments[0] == 'create') {
+      isProject = VuiCli.arguments[1].split(':').first == 'project';
     }
     var name = isProject ? 'home' : this.name;
 

@@ -3,15 +3,15 @@ import '../commands/impl/help/help.dart';
 import '../commands/interface/command.dart';
 import '../common/utils/logger/log_utils.dart';
 
-class GetCli {
+class VuiCli {
   final List<String> _arguments;
 
-  GetCli(this._arguments) {
+  VuiCli(this._arguments) {
     _instance = this;
   }
 
-  static GetCli _instance;
-  static GetCli get to => _instance;
+  static VuiCli _instance;
+  static VuiCli get to => _instance;
 
   static List<String> get arguments => to._arguments;
 
@@ -66,7 +66,7 @@ class GetCli {
 
 class ErrorCommand extends Command {
   @override
-  String get commandName => 'onerror';
+  String get commandName => 'onError';
   String error;
   ErrorCommand(this.error);
   @override
@@ -76,7 +76,7 @@ class ErrorCommand extends Command {
   }
 
   @override
-  String get hint => 'Print on erro';
+  String get hint => 'Print on error';
 
   @override
   bool validate() {

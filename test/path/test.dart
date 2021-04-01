@@ -1,4 +1,4 @@
-import 'package:v_cli/functions/path/replace_to_relative.dart';
+import 'package:vui_cli/functions/path/replace_to_relative.dart';
 import 'package:test/test.dart';
 
 void main() {

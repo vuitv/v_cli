@@ -1,9 +1,9 @@
-import 'package:v_cli/core/generator.dart';
-import 'package:v_cli/exception_handler/exception_handler.dart';
-import 'package:v_cli/functions/version/version_update.dart';
+import 'package:vui_cli/core/generator.dart';
+import 'package:vui_cli/exception_handler/exception_handler.dart';
+import 'package:vui_cli/functions/version/version_update.dart';
 
 Future<void> main(List<String> arguments) async {
-  final command = GetCli(arguments).findCommand();
+  final command = VuiCli(arguments).findCommand();
 
   if (arguments.contains('--debug')) {
     if (command.validate()) {

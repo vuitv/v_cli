@@ -1,16 +1,16 @@
-name: v_cli
+name: vui_cli
 description: A simple command-line application.
-# version: 1.0.0
-# homepage: https://www.example.com
+version: 1.0.0
+homepage: https://github.com/vuitv/v_cli
 
 environment:
   sdk: '>=2.7.0 <3.0.0'
 
 executables:
-  vui: vui
-  getx: vui
+  vui: vui_cli
 
 dependencies:
+  get: 4.1.1
   meta: ^1.2.3
   recase: ^3.0.0
   cli_menu: ^0.2.2

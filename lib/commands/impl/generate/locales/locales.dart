@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:path/path.dart';
-import 'package:v_cli/core/generator.dart';
+import 'package:vui_cli/core/generator.dart';
 
 import '../../../../common/utils/logger/log_utils.dart';
 import '../../../../core/internationalization.dart';
@@ -26,7 +26,7 @@ class GenerateLocalesCommand extends Command {
   @override
   Future<void> execute() async {
     final inputPath =
-        GetCli.arguments.length >= 3 ? GetCli.arguments[2] : 'assets/locales';
+        VuiCli.arguments.length >= 3 ? VuiCli.arguments[2] : 'assets/locales';
 
     if (!await Directory(inputPath).exists()) {
       LogService.error(

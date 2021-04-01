@@ -1,15 +1,15 @@
 {
   "ask": {
     "existing_page": "The page [%s] already exists, do you want to overwrite it?",
-    "name_to_project": "what is the name of the project?",
+    "name_to_project": "What is the name of the project?",
     "company_domain": "What is your company's domain?",
     "model_name": "Could not set the model name automatically, which name do you want to use?",
     "package_already_installed": "package: %s already installed, do you want to update?",
     "lib_not_empty": "Your lib folder is not empty. Are you sure you want to overwrite your application? \\n WARNING: This action is irreversible",
-    "ios_lang": "what language do you want to use on ios?",
-    "android_lang": "what language do you want to use on android?",
+    "ios_lang": "What language do you want to use on ios?",
+    "android_lang": "What language do you want to use on android?",
     "use_null_safe": "Do you want to use null safe?",
-    "use_linter": "do you want to use some linter?"
+    "use_linter": "Do you want to use some linter?"
   },
   "error": {
     "failed_to_connect": "Failed to connect with %s",
@@ -23,7 +23,7 @@
     "required_path": "Needed to pass the file or directory path",
     "invalid_dart": "The %s is not a valid dart file",
     "invalid_file_or_directory": "The %s is not a valid file or directory",
-    "package_not_found": "Package: %s not found in pub.dev",
+    "package_not_found": "Package: [%s] not found in pub.dev",
     "cli_version_not_found": "failed to find the version you have installed.",
     "update_cli": "There was an error upgrading get_cli",
     "folder_not_found": "Folder %s not found",
@@ -54,7 +54,7 @@
     "install": "Use to install a package in your project (dependencies):",
     "remove": "Use to remove a package in your project (dependencies):",
     "sort": "Sort imports and format dart files",
-    "update": "To update GET_CLI",
+    "update": "To update VUI_CLI",
     "version": "Shows the current CLI version'"
   },
 

@@ -1,5 +1,6 @@
 import 'package:cli_menu/cli_menu.dart';
 
+import '../../../../common/utils/logger/log_utils.dart';
 import '../../../../common/utils/pubspec/pubspec_utils.dart';
 import '../../../../common/utils/shell/shel.utils.dart';
 import '../../../../core/internationalization.dart';
@@ -13,6 +14,7 @@ class InitCommand extends Command {
   String get commandName => 'init';
   @override
   Future<void> execute() async {
+    LogService.info('Choose a project structure?');
     final menu = Menu([
       'GetX Pattern (by Kauê)',
       'CLEAN (by Arktekko)',

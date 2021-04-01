@@ -11,7 +11,7 @@ class RemoveCommand extends Command {
   String get commandName => 'remove';
   @override
   Future<void> execute() async {
-    var args = List<String>.from(GetCli.arguments);
+    var args = List<String>.from(VuiCli.arguments);
     var package = args.first;
     if (args.length == 1) {
       PubspecUtils.removeDependencies(package);
@@ -20,7 +20,7 @@ class RemoveCommand extends Command {
         PubspecUtils.removeDependencies(element);
       }
     }
-    if (GetCli.arguments.first == 'remove') {
+    if (VuiCli.arguments.first == 'remove') {
       await ShellUtils.pubGet();
     }
   }
@@ -30,7 +30,7 @@ class RemoveCommand extends Command {
 
   @override
   bool validate() {
-    var args = List<String>.from(GetCli.arguments);
+    var args = List<String>.from(VuiCli.arguments);
     args.removeAt(0);
     if (args.isEmpty) {
       LogService.error('Enter the name of the package you wanna remove');
