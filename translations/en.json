@@ -14,7 +14,7 @@
   "error": {
     "failed_to_connect": "Failed to connect with %s",
     "no_valid_file_or_url": "%s is not a file or valid url",
-    "unnecessary_parameter": "the %s parameter is not necessary",
+    "unnecessary_parameter": "The %s parameter is not necessary",
     "unnecessary_parameter_plural": "the %s parameters are not necessary",
     "nonexistent_directory": "%s directory does not exist.",
     "empty_directory": "%s is empty",
@@ -46,11 +46,11 @@
 
     "generate": {
       "locales": "Generate translation file from json files",
-      "model": "generate Class model from json"
+      "model": "Generate Class model from json"
     },
 
     "help": "Show this help",
-    "init": "generate the chosen structure on an existing project:",
+    "init": "Generate the chosen structure on an existing project:",
     "install": "Use to install a package in your project (dependencies):",
     "remove": "Use to remove a package in your project (dependencies):",
     "sort": "Sort imports and format dart files",
