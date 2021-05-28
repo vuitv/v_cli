@@ -163,7 +163,7 @@ class Locales {
   static const en = {
     'ask_existing_page':
         'The page [%s] already exists, do you want to overwrite it?',
-    'ask_name_to_project': 'what is the name of the project?',
+    'ask_name_to_project': 'What is the name of the project?',
     'ask_company_domain': 'What is your company\'s domain?',
     'ask_model_name':
         'Could not set the model name automatically, which name do you want to use?',
@@ -171,13 +171,13 @@ class Locales {
         'package: %s already installed, do you want to update?',
     'ask_lib_not_empty':
         'Your lib folder is not empty. Are you sure you want to overwrite your application? \n WARNING: This action is irreversible',
-    'ask_ios_lang': 'what language do you want to use on ios?',
-    'ask_android_lang': 'what language do you want to use on android?',
+    'ask_ios_lang': 'What language do you want to use on ios?',
+    'ask_android_lang': 'What language do you want to use on android?',
     'ask_use_null_safe': 'Do you want to use null safe?',
-    'ask_use_linter': 'do you want to use some linter?',
+    'ask_use_linter': 'Do you want to use some linter?',
     'error_failed_to_connect': 'Failed to connect with %s',
     'error_no_valid_file_or_url': '%s is not a file or valid url',
-    'error_unnecessary_parameter': 'the %s parameter is not necessary',
+    'error_unnecessary_parameter': 'The %s parameter is not necessary',
     'error_unnecessary_parameter_plural': 'the %s parameters are not necessary',
     'error_nonexistent_directory': '%s directory does not exist.',
     'error_empty_directory': '%s is empty',
@@ -188,7 +188,7 @@ class Locales {
     'error_invalid_dart': 'The %s is not a valid dart file',
     'error_invalid_file_or_directory':
         'The %s is not a valid file or directory',
-    'error_package_not_found': 'Package: %s not found in pub.dev',
+    'error_package_not_found': 'Package: [%s] not found in pub.dev',
     'error_cli_version_not_found':
         'failed to find the version you have installed.',
     'error_update_cli': 'There was an error upgrading get_cli',
@@ -204,13 +204,13 @@ class Locales {
     'hint_create_screen': 'Generate new screen',
     'hint_create_view': 'Generate view',
     'hint_generate_locales': 'Generate translation file from json files',
-    'hint_generate_model': 'generate Class model from json',
+    'hint_generate_model': 'Generate Class model from json',
     'hint_help': 'Show this help',
-    'hint_init': 'generate the chosen structure on an existing project:',
+    'hint_init': 'Generate the chosen structure on an existing project:',
     'hint_install': 'Use to install a package in your project (dependencies):',
     'hint_remove': 'Use to remove a package in your project (dependencies):',
     'hint_sort': 'Sort imports and format dart files',
-    'hint_update': 'To update GET_CLI',
+    'hint_update': 'To update VUI_CLI',
     'hint_version': 'Shows the current CLI version\'',
     'info_unnecessary_flag': 'The %s is not necessary',
     'info_unnecessary_flag_prural': 'The %s are not necessary',
