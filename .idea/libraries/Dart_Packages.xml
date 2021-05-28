@@ -131,7 +131,7 @@
         <entry key="flutter">
           <value>
             <list>
-              <option value="$PROJECT_DIR$/../../flutter-sdk/flutter/packages/flutter/lib" />
+              <option value="$USER_HOME$/fvm/versions/2.0.6/packages/flutter/lib" />
             </list>
           </value>
         </entry>
@@ -334,7 +334,7 @@
         <entry key="sky_engine">
           <value>
             <list>
-              <option value="$PROJECT_DIR$/../../flutter-sdk/flutter/bin/cache/pkg/sky_engine/lib" />
+              <option value="$USER_HOME$/fvm/versions/2.0.6/bin/cache/pkg/sky_engine/lib" />
             </list>
           </value>
         </entry>
@@ -539,8 +539,8 @@
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/web_socket_channel-1.2.0/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/webkit_inspection_protocol-0.7.5/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/yaml-2.2.1/lib" />
-      <root url="file://$PROJECT_DIR$/../../flutter-sdk/flutter/bin/cache/pkg/sky_engine/lib" />
-      <root url="file://$PROJECT_DIR$/../../flutter-sdk/flutter/packages/flutter/lib" />
+      <root url="file://$USER_HOME$/fvm/versions/2.0.6/bin/cache/pkg/sky_engine/lib" />
+      <root url="file://$USER_HOME$/fvm/versions/2.0.6/packages/flutter/lib" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
