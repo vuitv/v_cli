@@ -1,0 +1,1 @@
+export 'package:vui_test/infrastructure/navigation/bindings/controllers/home.controller.binding.dart'; 

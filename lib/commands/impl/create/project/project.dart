@@ -82,14 +82,14 @@ class CreateProjectCommand extends Command {
       }
       switch (linterResult.index) {
         case 1:
-          PubspecUtils.addDependencies('pedantic',
+          await PubspecUtils.addDependencies('pedantic',
               isDev: true, runPubGet: false);
           AnalysisOptionsSample(
                   include: 'include: package:pedantic/analysis_options.yaml')
               .create();
           break;
         case 2:
-          PubspecUtils.addDependencies('effective_dart',
+          await PubspecUtils.addDependencies('effective_dart',
               isDev: true, runPubGet: false);
           AnalysisOptionsSample(
               include: 'include: package:effective_dart/analysis_options.yaml');
